@@ -1,2 +1,4 @@
-# 2gis-test-ui-developer
-2gis test
+# Выполненное тестовое задание для кандидатов на должность фронтенд-разработчика в 2ГИС 
+
+Задание:
+https://github.com/bisserof/test

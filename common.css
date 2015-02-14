@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    color: #333333;
+    font: 14px Verdana, Geneva, sans-serif;
+}
+
+h1, h2, p {
+    margin: 10px 0;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.test-box ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.print-container {
+    padding: 10px;
+    list-style: none;
+}
+
+.print-item {
+    margin: 5px 0;
+}
+
+.success {
+    color: green;
+}
+
+.fail {
+    color: red;
+}
+
+.container {
+    background: white;
+    border: 4px solid black;
+}

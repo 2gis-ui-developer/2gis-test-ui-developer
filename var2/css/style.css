@@ -1,0 +1,27 @@
+ul {
+    overflow: hidden;
+}
+
+ul li.one {
+    float: left;
+}
+
+ul li.two {
+    overflow: hidden;
+    float: none;
+}
+
+ul li.two li {
+    width: 33.33%;
+    text-align: right;
+    float: left;
+}
+
+ul li .item {
+    width: 62px;
+    height: 62px;
+    background: #e80e0e;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+}
