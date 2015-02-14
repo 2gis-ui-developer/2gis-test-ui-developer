@@ -166,7 +166,7 @@ var testLayout = (function(){
             // Test before remove
             var resultBeforeRemove = test(items);
             var message = 'Расстояние одинаково до удаления последнего элемента. Погрешность: '
-                + resultBeforeRemove.maxDifference + ' (лимит ' + settings.distanceDifferenceLimit + ')';
+                + resultBeforeRemove.maxDifference + 'px (лимит ' + settings.distanceDifferenceLimit + 'px)';
 
             if(resultBeforeRemove.result && testDifference(resultBeforeRemove.maxDifference)) {
                 utils.print(message, 'success');
@@ -184,7 +184,7 @@ var testLayout = (function(){
                 resultAfterRemove = test(items, resultBeforeRemove.distance, resultBeforeRemove.maxDifference);
 
                 message = 'Расстояние одинаково после удаления последнего элемента. Погрешность: '
-                + resultAfterRemove.maxDifference + ' (лимит ' + settings.distanceDifferenceLimit + ')';
+                + resultAfterRemove.maxDifference + 'px (лимит ' + settings.distanceDifferenceLimit + 'px)';
 
                 if(resultAfterRemove.result && testDifference(resultAfterRemove.maxDifference)) {
                     utils.print(message, 'success');
