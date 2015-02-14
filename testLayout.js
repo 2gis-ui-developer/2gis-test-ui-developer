@@ -126,9 +126,6 @@ var testLayout = (function(){
                 var prevElOffsetLeft = firstElOffsetLeft;
                 var curDifference;
 
-
-                var result = true;
-
                 for(var i = 1, len = items.length; i < len; i++) {
                     if(i === 1 && !distance) {
                         distance = items[1].offsetLeft - firstElOffsetLeft;
@@ -136,7 +133,6 @@ var testLayout = (function(){
 
                     curDistance = items[i].offsetLeft - prevElOffsetLeft;
                     if(i > 1 && curDistance !== distance) {
-                        result = false;
                         curDifference = Math.abs(distance - curDistance);
                         if(curDifference > maxDifference) {
                             maxDifference = curDifference;
@@ -150,7 +146,7 @@ var testLayout = (function(){
                 //utils.print('Допустимая погрешность: ' + settings.distanceDifferenceLimit + 'px');
 
                 return {
-                    result: result,
+                    result: testDifference(maxDifference),
                     distance: distance,
                     maxDifference: maxDifference
                 }
@@ -210,8 +206,8 @@ var testLayout = (function(){
 
     return {
         /*init: function() {
-            return methods.init();
-        }*/
+         return methods.init();
+         }*/
     }
 })();
 
